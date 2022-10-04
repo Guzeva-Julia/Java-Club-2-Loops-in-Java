@@ -6,19 +6,22 @@ public class Fibonacci {
         int fib1 = 1;
         int fib2 = 1;
         int fib3 = 0;
+        double sum = 0;
         System.out.print(fib1 + " " + fib2 + " ");
 
         for(int a = 3; a <= 20; a++) {
             fib3 = fib1 + fib2;
             System.out.print(" " + fib3 + " ");
+            System.out.println(" ");
             fib1 = fib2;
             fib2 = fib3;
-
+            sum += fib3/20;
 
         }
-        double sum = 0;
-        sum += fib3/20;
-        System.out.println ("The average is " + sum);
+        double average=0;
+        average = sum/20;
+        
+        System.out.println ("The average is " + average);
 
 
 
